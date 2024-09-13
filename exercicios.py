@@ -136,15 +136,59 @@ import math
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-x1 = float(input("Inserir um número: "))
-x2 = float(input("Inserir um número: "))
-resultado = x1 != x2
-print(f"Os números são diferentes? {resultado}")
+# x1 = float(input("Inserir um número: "))
+# x2 = float(input("Inserir um número: "))
+# resultado = x1 != x2
+# print(f"Os números são diferentes? {resultado}")
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+#try:
+#    celsius = float(input("Digite a temperatura em Celsius: "))
+#    fahrenheit = (celsius * 9/5) + 32
+#    print(f"{celsius}°C é igual a {fahrenheit}°F.")
+#except ValueError:
+#    print("Por favor, digite um número válido para a temperatura.")
+
 # 22: Verificador de Palíndromo
+
+#texto = input("Inserir frase: ")
+
+#if isinstance(texto, str):
+#    texto_formatado = texto.replace(" ", "").lower()
+#    if texto_formatado == texto_formatado[::-1]:
+#        print("É um políndromo")
+#    else:
+#        print("Não é um políndromo")
+#else:
+#    print("Favor entrar com os dados corretos")
+
 # 23: Calculadora Simples
+
+try:
+    metodo = input("Inserir o método + - x ou /: ")
+    num01 = float(input("Inserir um número: "))
+    num02 = float(input("Inserir um número: "))
+    if metodo == "+":
+        resultado = num01 + num02
+        print(resultado)
+    elif metodo == "-":
+         resultado = num01 - num02
+         print(resultado)
+    elif metodo == "x":
+         resultado = num01 * num02
+         print(resultado)
+    elif metodo == "/" and num02 != 0:
+         resultado = num01 / num02
+         print(resultado)
+    else:
+        print("Operador invalido ou divisão por 0")
+    
+except ValueError:
+    print("Favor inserir os dados corretos")
+
+
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
