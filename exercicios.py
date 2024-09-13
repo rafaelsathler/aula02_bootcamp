@@ -167,28 +167,43 @@ import math
 
 # 23: Calculadora Simples
 
-try:
-    metodo = input("Inserir o método + - x ou /: ")
-    num01 = float(input("Inserir um número: "))
-    num02 = float(input("Inserir um número: "))
-    if metodo == "+":
-        resultado = num01 + num02
-        print(resultado)
-    elif metodo == "-":
-         resultado = num01 - num02
-         print(resultado)
-    elif metodo == "x":
-         resultado = num01 * num02
-         print(resultado)
-    elif metodo == "/" and num02 != 0:
-         resultado = num01 / num02
-         print(resultado)
-    else:
-        print("Operador invalido ou divisão por 0")
-    
-except ValueError:
-    print("Favor inserir os dados corretos")
-
+# try:
+#    metodo = input("Inserir o método + - x ou /: ")
+#    num01 = float(input("Inserir um número: "))
+#    num02 = float(input("Inserir um número: "))
+#    if metodo == "+":
+#        resultado = num01 + num02
+#        print(resultado)
+#    elif metodo == "-":
+#         resultado = num01 - num02
+#         print(resultado)
+#    elif metodo == "x":
+#         resultado = num01 * num02
+#         print(resultado)
+#    elif metodo == "/" and num02 != 0:
+#         resultado = num01 / num02
+#         print(resultado)
+#    else:
+#        print("Operador invalido ou divisão por 0")
+#    
+#except ValueError:
+#    print("Favor inserir os dados corretos")
 
 # 24: Classificador de Números
+
+try:
+    num = float(input("Inserir um número: "))
+    if num < 0:
+        print("Negativo")
+    elif num > 0:
+        print("Positivo")
+    else:
+        print("Zero")
+    if num % 2 == 0:
+        print("Par")
+    else:
+        print("ímpar")
+except ValueError:
+    print("Inserir dados corretos")
+    
 # 25: Conversão de Tipo com Validação
